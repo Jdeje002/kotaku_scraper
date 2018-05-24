@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Scraping With Kotaku</title>
     <style>
-      body { background-color: #F2F6D0 }
+      body { background-color: lightblue }
       #wrapper {
         width: 960px;
         margin-left: auto;
@@ -13,7 +13,6 @@
       }
       #articles {
         display: inline-block;
-        overflow: auto;
         width: 60%;
         height: 700px;
       }
@@ -24,7 +23,7 @@
       textarea, input {
         display: block;
         width: 100%;
-        background-color: #FCF5C7;
+        background-color: white;
       }
       input {
         height: 36px;
@@ -34,13 +33,26 @@
         height: 200px;
         font-size: 18px;
       }
+      #title{
+        max-height: 100px
+      }
+      p{
+        background: white;
+        padding: 10px;
+        border: solid;
+        
+      }
     </style>
   </head>
   <body>
     <div id="wrapper">
-      <h1>Kotaku Scraper</h1>
+      <img   id ='title' src="kotaku-logo-black-transparent.png">
+      <div>
+        <h3>The Gamer's Guide</h3>
+      </div>
       <div id="articles"></div>
       <div id="notes"></div>
+     
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
